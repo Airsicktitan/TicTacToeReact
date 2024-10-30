@@ -58,7 +58,7 @@ export default function Board() {
             <div>
                 {(winner || isDraw) && (
                     <>
-                        {showConfetti && <Confetti
+                        {(winner && showConfetti) && <Confetti
                             width={window.innerWidth}
                             height={window.innerHeight}/>}
                         <button
